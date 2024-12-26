@@ -27,6 +27,68 @@ function Get-LastWorkingDay {
     }
 }
 
+function Get-Records {
+    if (-not(Test-Path .\reference)) {
+        New-Item -ItemType Directory -Path .\reference > $null
+    }
+
+    rclone copy UPScans:db_names .\reference
+
+    if(-not(Test-Path .\reference\naming_ref.csv)) {
+        throw "Missing reference file in cloud."
+    }
+
+    return
+}
+
+function Upload-Files {
+    param($folder_dir)
+    rclone copy ".\logs" UPScans:$folder_dir
+    return
+}
+
+function Verify-FileNames {
+    param([string]$user,[string]$ref,[int]$attempt)
+    if ($attempt -eq 3) {
+        return throw "Failed to fetch naming."
+    }
+
+    if(-not(Test-Path $user)) {
+        throw "Missing user profile."
+    }
+
+    if (-not(Test-Path $ref)) {
+        Get-Records
+    }
+
+    # Look for device id
+    Get-Content -Path  $user | ForEach-Object {
+        if ($_ -match "device:\s*(.+)") {
+            $device = $matches[1].Trim()
+        }
+    }
+
+    # Retrieve correspondede folder and file
+    Get-Content -Path $ref | ForEach-Object {
+        if ($_ -imatch "$device,(.+),(.+)") {
+            $folder = $matches[1].Trim()  
+            $file = $matches[2].Trim()
+        }
+    }
+
+    foreach ($item in @($device, $folder, $file)) {
+        if (-not ($item)) {
+            return Verify-FileNames -user $user -ref $ref -attempt $attempt++
+        }
+    }
+
+    [PSCustomObject]@{
+        Folder = $folder
+        File   = $file
+    }
+   
+}
+
 # Helper function to format the log data
 function Format-LogEntry {
     param ($entry)
@@ -40,17 +102,6 @@ function Format-LogEntry {
     }
 }
 
-function Get-Records {
-    rclone copy UPScans:db_names .\reference
-    return
-}
-
-function Upload-Files {
-    param($folder_dir)
-    rclone copy ".\logs" UPScans:$folder_dir
-    return
-}
-
 # Determine if today is the last working day
 function Main {
     $lastWorkingDay = Get-Date
@@ -60,39 +111,21 @@ function Main {
         Write-Output "Running script on the last working day of the month: $lastWorkingDay"
         
         # Ensure the output directory exists
-        #$env:RCLONE_CONFIG = ".\config\rclone.conf"
+        $env:RCLONE_CONFIG = ".\config\rclone.conf"
         $outputDir = ".\logs"
         $applicationDir = "$outputDir\Scan Logs"
         $securityDir = "$outputDir\Entry Logs"
         $ref = ".\reference\naming_ref.csv"
         $user = ".\config\user.prof"
 
-        if (-not (Test-Path $outputDir)) {  
-            New-Item -ItemType Directory -Path $outputDir > $null
+        $result = Verify-FileNames -user $user -ref $ref -attempt 0
+        $file = $result.File
+        $folder = $resul.Folder
+
+        if (-not (Test-Path $outputDir)) {
             New-Item -ItemType Directory -Path $applicationDir > $null
             New-Item -ItemType Directory -Path $securityDir > $null
-        }
-
-        if (Test-Path $user) {
-            Get-Content -Path  $user | ForEach-Object {
-                if ($_ -match "device:\s*(.+)") {
-                    $device = $matches[1].Trim()
-                }
-            }
-        } else {
-            return "Missing user profile."
-        }
-
-        if (-not(Test-Path $ref)) {
-            Get-Records
-        }
-
-        Get-Content -Path $ref | ForEach-Object {
-            if ($_ -imatch "$device,(.+),(.+)") {
-                $folder = $matches[1].Trim()  
-                $file = $matches[2].Trim()
-            }
-        }
+        }        
 
         # 1. Get Application logs for the last month
         Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable @{LogName="Application"; StartTime=(Get-Date).AddMonths(-1); EndTime=(Get-Date)} |
