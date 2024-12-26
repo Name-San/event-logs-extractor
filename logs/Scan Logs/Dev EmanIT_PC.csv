@@ -1,4 +1,65 @@
 "Level","Date and Time","Source","Event ID","Task Category","Message"
+,"12/26/2024 5:01:02 PM","FVSDK","0",,
+,"12/26/2024 5:01:01 PM","FVSDK","0",,
+,"12/26/2024 5:01:01 PM","FVSDK","0",,
+"Warning","12/26/2024 5:00:37 PM","Microsoft-Windows-Perflib","1008",,"The Open procedure for service ""WmiApRpl"" in DLL ""C:\Windows\system32\wbem\wmiaprpl.dll"" failed with error code The device is not ready.. Performance data for this service will not be available."
+,"12/26/2024 5:00:37 PM","FVSDK","0",,
+,"12/26/2024 5:00:37 PM","FVSDK","0",,
+,"12/26/2024 5:00:37 PM","FVSDK","0",,
+,"12/26/2024 5:00:37 PM","FVSDK","0",,
+,"12/26/2024 5:00:37 PM","FVSDK","0",,
+,"12/26/2024 5:00:37 PM","FVSDK","0",,
+,"12/26/2024 5:00:37 PM","FVSDK","0",,
+"Information","12/26/2024 4:59:37 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2025-01-02T00:31:37Z. Reason: RulesEngine."
+"Information","12/26/2024 4:59:06 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
+"Information","12/26/2024 4:35:38 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2025-01-02T00:31:38Z. Reason: RulesEngine."
+"Information","12/26/2024 4:35:05 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
+,"12/26/2024 4:19:33 PM","FVSDK","0",,
+,"12/26/2024 4:19:32 PM","FVSDK","0",,
+,"12/26/2024 4:19:32 PM","FVSDK","0",,
+"Warning","12/26/2024 4:18:59 PM","Microsoft-Windows-Perflib","1008",,"The Open procedure for service ""WmiApRpl"" in DLL ""C:\Windows\system32\wbem\wmiaprpl.dll"" failed with error code The device is not ready.. Performance data for this service will not be available."
+,"12/26/2024 4:18:58 PM","FVSDK","0",,
+,"12/26/2024 4:18:58 PM","FVSDK","0",,
+,"12/26/2024 4:18:58 PM","FVSDK","0",,
+,"12/26/2024 4:18:58 PM","FVSDK","0",,
+,"12/26/2024 4:18:58 PM","FVSDK","0",,
+,"12/26/2024 4:18:58 PM","FVSDK","0",,
+,"12/26/2024 4:18:58 PM","FVSDK","0",,
+"Information","12/26/2024 4:08:52 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2025-01-02T00:31:52Z. Reason: RulesEngine."
+"Information","12/26/2024 4:08:21 PM","Microsoft-Windows-Security-SPP","1003",,"The Software Protection service has completed licensing status check.
+Application Id=0ff1ce15-a989-479d-af46-f275c6370663
+Licensing Status=
+1: 85dd8b5f-eaa4-4af3-a628-cce9e77c9a03, 1, 1 [(0 [0x00000000, 1, 0], [(?)( 1 0x00000000)(?)( 2 0x00000000 0 0 msft:rm/algorithm/volume/1.0 0x00000000 258744)(?)(?)(?)(?)])(1 )(2 )(3 )]
+
+"
+"Information","12/26/2024 4:08:21 PM","Microsoft-Windows-Security-SPP","1003",,"The Software Protection service has completed licensing status check.
+Application Id=0ff1ce15-a989-479d-af46-f275c6370663
+Licensing Status=
+1: 0b4e6cfa-3072-434c-b702-bd1836e6887c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+2: 0bc88885-718c-491d-921f-6f214349e79c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+3: 6755c7a7-4dfe-46f5-bce8-427be8e9dc62, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
+4: 85dd8b5f-eaa4-4af3-a628-cce9e77c9a03, 1, 1 [(0 [0x00000000, 1, 0], [(?)( 1 0x00000000)(?)( 2 0x00000000 0 0 msft:rm/algorithm/volume/1.0 0x00000000 258744)(?)(?)(?)(?)])(1 )(2 )(3 )]
+
+"
+"Information","12/26/2024 4:08:21 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
+"Information","12/26/2024 3:38:26 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2025-01-02T00:31:26Z. Reason: RulesEngine."
+"Information","12/26/2024 3:37:56 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
+"Information","12/26/2024 3:29:08 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2025-01-02T00:32:08Z. Reason: RulesEngine."
+"Information","12/26/2024 3:28:36 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
+"Warning","12/26/2024 3:12:22 PM","Chrome","256","Browser Events","[19096:19064:1226/151222.195:WARNING:remote_commands_service.cc(221)] Client is not registered."
+"Information","12/26/2024 2:07:07 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2025-01-02T00:32:07Z. Reason: RulesEngine."
+"Information","12/26/2024 2:06:37 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
+,"12/26/2024 1:55:52 PM","FVSDK","0",,
+,"12/26/2024 1:55:52 PM","FVSDK","0",,
+,"12/26/2024 1:55:52 PM","FVSDK","0",,
+"Warning","12/26/2024 1:55:20 PM","Microsoft-Windows-Perflib","1008",,"The Open procedure for service ""WmiApRpl"" in DLL ""C:\Windows\system32\wbem\wmiaprpl.dll"" failed with error code The device is not ready.. Performance data for this service will not be available."
+,"12/26/2024 1:55:19 PM","FVSDK","0",,
+,"12/26/2024 1:55:19 PM","FVSDK","0",,
+,"12/26/2024 1:55:19 PM","FVSDK","0",,
+,"12/26/2024 1:55:19 PM","FVSDK","0",,
+,"12/26/2024 1:55:19 PM","FVSDK","0",,
+,"12/26/2024 1:55:19 PM","FVSDK","0",,
+,"12/26/2024 1:55:19 PM","FVSDK","0",,
 "Information","12/26/2024 12:43:09 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2025-01-02T00:32:09Z. Reason: RulesEngine."
 "Information","12/26/2024 12:42:37 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
 "Information","12/26/2024 11:40:58 AM","Microsoft-Windows-Defrag","258",,"The storage optimizer successfully completed defragmentation on (C:)"
@@ -8389,212 +8450,3 @@ Log record of type 'Insert   ' was seen most frequently (2369 times)"
 "Information","11/26/2024 6:36:59 PM","ESENT","102","General","Video.UI (18668,P,98) {AF394FD6-B86A-4CAC-B4DC-0E9764BF0A3D}: The database engine (10.00.22631.0000) is starting a new instance (0)."
 "Information","11/26/2024 6:17:37 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2024-11-27T04:18:37Z. Reason: RulesEngine."
 "Information","11/26/2024 6:17:07 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
-"Information","11/26/2024 5:42:18 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2024-11-27T04:18:18Z. Reason: RulesEngine."
-"Information","11/26/2024 5:41:46 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
-"Information","11/26/2024 4:09:25 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2024-11-27T04:18:25Z. Reason: RulesEngine."
-"Information","11/26/2024 4:08:55 PM","Microsoft-Windows-Security-SPP","1040",,"Hardware has changed from previous boot.
- AppId=55c92734-d682-4d71-983e-d6ec3f16059f, SkuId=2de67392-b7a7-462a-b1ca-108dd189f588."
-"Information","11/26/2024 4:08:54 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
-"Information","11/26/2024 3:37:50 PM","SecurityCenter","15",,"Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON."
-"Information","11/26/2024 3:37:48 PM","SecurityCenter","15",,"Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON."
-"Warning","11/26/2024 2:39:01 PM","Chrome","256","Browser Events","[996:17636:1126/143901.144:WARNING:remote_commands_service.cc(221)] Client is not registered."
-"Warning","11/26/2024 2:26:43 PM","Chrome","256","Browser Events","[996:17636:1126/142643.902:WARNING:remote_commands_service.cc(221)] Client is not registered."
-"Information","11/26/2024 1:39:18 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2024-11-27T04:18:18Z. Reason: RulesEngine."
-"Information","11/26/2024 1:39:07 PM","VSS","8224",,"The VSS service is shutting down due to idle timeout. "
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","8197",,"SLUI.exe was launched with the following command-line parameters:
-RuleId=379cccfb-d4e0-48fe-b0f2-0136097be147;Action=CleanupState;AppId=55c92734-d682-4d71-983e-d6ec3f16059f;SkuId=2de67392-b7a7-462a-b1ca-108dd189f588;Trigger=TimerEvent"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","8230",,"The rules engine successfully re-evaluated the schedule.
-Kernel policies:
-Security-SPP-Action-StateData (REG_SZ) =AppId=55c92734-d682-4d71-983e-d6ec3f16059f;GraceEndDate=2025/05/25:05:38:48;LastConsumptionReason=0x00000000;LastNotificationId=Cleanup;LicenseState=SL_LICENSING_STATUS_LICENSED;PartialProductKey=T83GX;ProductKeyType=Volume:GVLK;SkuId=2de67392-b7a7-462a-b1ca-108dd189f588;ruleId=379cccfb-d4e0-48fe-b0f2-0136097be147;uxDifferentiator=ENVIRONMENT;volumeActivationOrder=normal"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","8197",,"SLUI.exe was launched with the following command-line parameters:
-RuleId=502ff3ba-669a-4674-bbb1-601f34a3b968;Action=AutoActivateSilent;AppId=55c92734-d682-4d71-983e-d6ec3f16059f;SkuId=2de67392-b7a7-462a-b1ca-108dd189f588;NotificationInterval=1440;Trigger=TimerEvent"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","1003",,"The Software Protection service has completed licensing status check.
-Application Id=55c92734-d682-4d71-983e-d6ec3f16059f
-Licensing Status=
-1: 040fa323-92b1-4baf-97a2-5b67feaefddb, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-2: 0724cb7d-3437-4cb7-93cb-830375d0079d, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-3: 0ad2ac98-7bb9-4201-8d92-312299201369, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-4: 1a9a717a-cf13-4ba5-83c3-0fe25fa868d5, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-5: 221a02da-e2a1-4b75-864c-0a4410a33fdf, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-6: 291ece0e-9c38-40ca-a9e1-32cc7ec19507, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-7: 2936d1d2-913a-4542-b54e-ce5a602a2a38, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-8: 2c293c26-a45a-4a2a-a350-c69a67097529, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-9: 2de67392-b7a7-462a-b1ca-108dd189f588, 1, 1 [(0 [0x00000000, 1, 0], [(?)( 1 0x00000000)(?)( 2 0x00000000 0 0 msft:rm/algorithm/volume/1.0 0x00000000 259200)(?)(?)( 10 0x00000000 msft:rm/algorithm/flags/1.0)(?)])(1 )(2 )(3 )]
-10: 2ffd8952-423e-4903-b993-72a1aa44cf82, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-11: 30a42c86-b7a0-4a34-8c90-ff177cb2acb7, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-12: 345a5db0-d94f-4e3b-a0c0-7c42f7bc3ebf, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-13: 3502365a-f88a-4ba4-822a-5769d3073b65, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-14: 377333b1-8b5d-48d6-9679-1225c872d37c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-15: 3df374ef-d444-4494-a5a1-4b0d9fd0e203, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-16: 3f1afc82-f8ac-4f6c-8005-1d233e606eee, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-17: 49cd895b-53b2-4dc4-a5f7-b18aa019ad37, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-18: 4de7cb65-cdf1-4de9-8ae8-e3cce27b9f2c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-19: 4f3da0d2-271d-4508-ae81-626b60809a38, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-20: 5d78c4e9-aeb3-4b40-8ac2-6a6005e0ad6d, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-21: 60b3ec1b-9545-4921-821f-311b129dd6f6, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-22: 613d217f-7f13-4268-9907-1662339531cd, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-23: 62f0c100-9c53-4e02-b886-a3528ddfe7f6, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-24: 6365275e-368d-46ca-a0ef-fc0404119333, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-25: 721f9237-9341-4453-a661-09e8baa6cca5, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-26: 73111121-5638-40f6-bc11-f1d7b0d64300, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-27: 7a802526-4c94-4bd1-ba14-835a1aca2120, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-28: 7cb546c0-c7d5-44d8-9a5c-69ecdd782b69, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-29: 82bbc092-bc50-4e16-8e18-b74fc486aec3, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-30: 8ab9bdd1-1f67-4997-82d9-8878520837d9, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-31: 8b351c9c-f398-4515-9900-09df49427262, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-32: 90da7373-1c51-430b-bf26-c97e9c5cdc31, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-33: 92fb8726-92a8-4ffc-94ce-f82e07444653, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-34: 95dca82f-385d-4d39-b85b-5c73fa285d6f, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-35: a48938aa-62fa-4966-9d44-9f04da3f72f2, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-36: b0773a15-df3a-4312-9ad2-83d69648e356, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-37: b4bfe195-541e-4e64-ad23-6177f19e395e, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-38: b68e61d2-68ca-4757-be45-0cc2f3e68eee, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-39: bd3762d7-270d-4760-8fb3-d829ca45278a, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-40: c86d5194-4840-4dae-9c1c-0301003a5ab0, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-41: ca7df2e3-5ea0-47b8-9ac1-b1be4d8edd69, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-42: d552befb-48cc-4327-8f39-47d2d94f987c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-43: d6eadb3b-5ca8-4a6b-986e-35b550756111, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-44: df96023b-dcd9-4be2-afa0-c6c871159ebe, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-45: e0c42288-980c-4788-a014-c080d2e1926e, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-46: e4db50ea-bda1-4566-b047-0ca50abc6f07, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-47: e558417a-5123-4f6f-91e7-385c1c7ca9d4, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-48: e7a950a2-e548-4f10-bf16-02ec848e0643, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-49: eb6d346f-1c60-4643-b960-40ec31596c45, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-50: ec868e65-fadf-4759-b23e-93fe37f2cc29, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-51: ef51e000-2659-4f25-8345-3de70a9cf4c4, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-52: f7af7d09-40e4-419c-a49b-eae366689ebd, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-53: fa755fe6-6739-40b9-8d84-6d0ea3b6d1ab, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-54: fe74f55b-0338-41d6-b267-4a201abe7285, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-
-"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","16388",,"The current time is 2024-11-26T05:38:48Z : 2024-11-26T05:38:48Z."
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","1003",,"The Software Protection service has completed licensing status check.
-Application Id=55c92734-d682-4d71-983e-d6ec3f16059f
-Licensing Status=
-1: 040fa323-92b1-4baf-97a2-5b67feaefddb, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-2: 0724cb7d-3437-4cb7-93cb-830375d0079d, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-3: 0ad2ac98-7bb9-4201-8d92-312299201369, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-4: 1a9a717a-cf13-4ba5-83c3-0fe25fa868d5, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-5: 221a02da-e2a1-4b75-864c-0a4410a33fdf, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-6: 291ece0e-9c38-40ca-a9e1-32cc7ec19507, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-7: 2936d1d2-913a-4542-b54e-ce5a602a2a38, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-8: 2c293c26-a45a-4a2a-a350-c69a67097529, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-9: 2de67392-b7a7-462a-b1ca-108dd189f588, 1, 1 [(0 [0x00000000, 1, 0], [(?)( 1 0x00000000)(?)( 2 0x00000000 0 0 msft:rm/algorithm/volume/1.0 0x00000000 259200)(?)(?)( 10 0x00000000 msft:rm/algorithm/flags/1.0)(?)])(1 )(2 )(3 )]
-10: 2ffd8952-423e-4903-b993-72a1aa44cf82, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-11: 30a42c86-b7a0-4a34-8c90-ff177cb2acb7, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-12: 345a5db0-d94f-4e3b-a0c0-7c42f7bc3ebf, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-13: 3502365a-f88a-4ba4-822a-5769d3073b65, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-14: 377333b1-8b5d-48d6-9679-1225c872d37c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-15: 3df374ef-d444-4494-a5a1-4b0d9fd0e203, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-16: 3f1afc82-f8ac-4f6c-8005-1d233e606eee, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-17: 49cd895b-53b2-4dc4-a5f7-b18aa019ad37, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-18: 4de7cb65-cdf1-4de9-8ae8-e3cce27b9f2c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-19: 4f3da0d2-271d-4508-ae81-626b60809a38, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-20: 5d78c4e9-aeb3-4b40-8ac2-6a6005e0ad6d, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-21: 60b3ec1b-9545-4921-821f-311b129dd6f6, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-22: 613d217f-7f13-4268-9907-1662339531cd, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-23: 62f0c100-9c53-4e02-b886-a3528ddfe7f6, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-24: 6365275e-368d-46ca-a0ef-fc0404119333, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-25: 721f9237-9341-4453-a661-09e8baa6cca5, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-26: 73111121-5638-40f6-bc11-f1d7b0d64300, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-27: 7a802526-4c94-4bd1-ba14-835a1aca2120, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-28: 7cb546c0-c7d5-44d8-9a5c-69ecdd782b69, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-29: 82bbc092-bc50-4e16-8e18-b74fc486aec3, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-30: 8ab9bdd1-1f67-4997-82d9-8878520837d9, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-31: 8b351c9c-f398-4515-9900-09df49427262, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-32: 90da7373-1c51-430b-bf26-c97e9c5cdc31, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-33: 92fb8726-92a8-4ffc-94ce-f82e07444653, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-34: 95dca82f-385d-4d39-b85b-5c73fa285d6f, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-35: a48938aa-62fa-4966-9d44-9f04da3f72f2, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-36: b0773a15-df3a-4312-9ad2-83d69648e356, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-37: b4bfe195-541e-4e64-ad23-6177f19e395e, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-38: b68e61d2-68ca-4757-be45-0cc2f3e68eee, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-39: bd3762d7-270d-4760-8fb3-d829ca45278a, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-40: c86d5194-4840-4dae-9c1c-0301003a5ab0, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-41: ca7df2e3-5ea0-47b8-9ac1-b1be4d8edd69, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-42: d552befb-48cc-4327-8f39-47d2d94f987c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-43: d6eadb3b-5ca8-4a6b-986e-35b550756111, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-44: df96023b-dcd9-4be2-afa0-c6c871159ebe, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-45: e0c42288-980c-4788-a014-c080d2e1926e, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-46: e4db50ea-bda1-4566-b047-0ca50abc6f07, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-47: e558417a-5123-4f6f-91e7-385c1c7ca9d4, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-48: e7a950a2-e548-4f10-bf16-02ec848e0643, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-49: eb6d346f-1c60-4643-b960-40ec31596c45, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-50: ec868e65-fadf-4759-b23e-93fe37f2cc29, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-51: ef51e000-2659-4f25-8345-3de70a9cf4c4, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-52: f7af7d09-40e4-419c-a49b-eae366689ebd, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-53: fa755fe6-6739-40b9-8d84-6d0ea3b6d1ab, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-54: fe74f55b-0338-41d6-b267-4a201abe7285, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-
-"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","1033",,"These policies are being excluded since they are only defined with override-only attribute.
-Policy Names=(Security-SPP-Reserved-EnableNotificationMode) 
-App Id=55c92734-d682-4d71-983e-d6ec3f16059f
-Sku Id=2de67392-b7a7-462a-b1ca-108dd189f588"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=Security-SPP-IgnoreDeferredActivation  Priority=500"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=AAD-BlockAADWorkplaceJoin-Default  Priority=100"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=AAD-BlockAADWorkplaceJoin-Default  Priority=100"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=AAD-BlockAADWorkplaceJoin-Default  Priority=100"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=AAD-BlockAADWorkplaceJoin-Default  Priority=100"
-"Information","11/26/2024 1:38:48 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=AAD-BlockAADWorkplaceJoin-Default  Priority=100"
-"Information","11/26/2024 1:38:47 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=AAD-BlockAADWorkplaceJoin-Default  Priority=100"
-"Information","11/26/2024 1:38:47 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=AAD-BlockAADWorkplaceJoin-Default  Priority=100"
-"Information","11/26/2024 1:38:47 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=AAD-BlockAADWorkplaceJoin-Default  Priority=100"
-"Information","11/26/2024 1:38:47 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=AAD-BlockAADWorkplaceJoin-Default  Priority=100"
-"Information","11/26/2024 1:38:47 PM","Microsoft-Windows-Security-SPP","1034",,"Duplicate definition of policy found. Policy name=AAD-BlockAADWorkplaceJoin-Default  Priority=100"
-"Information","11/26/2024 1:38:47 PM","Microsoft-Windows-Security-SPP","12289",,"The client has processed an activation response from the key management service machine.
-Info:
-0x00000000, 0x00000000, 1, 0, 50, 120, 10080, 2024/11/26 05:38"
-"Information","11/26/2024 1:38:47 PM","Microsoft-Windows-Security-SPP","12288",,"The client has sent an activation request to the key management service machine.
-Info:
-0x00000000, 0x00000000, 172.16.16.16:1688, 1950cbc7-98a4-4ff4-a183-f94154e91993, 2024/11/26 05:38, 1, 1, 249120, 2de67392-b7a7-462a-b1ca-108dd189f588, 25"
-"Information","11/26/2024 1:38:42 PM","Microsoft-Windows-Security-SPP","8230",,"The rules engine successfully re-evaluated the schedule.
-Kernel policies:
-Security-SPP-Action-StateData (REG_SZ) =AppId=55c92734-d682-4d71-983e-d6ec3f16059f;GraceEndDate=2025/05/18:05:38:42;LastConsumptionReason=0x00000000;LastNotificationId=VolumeRenewalRequired;LicenseState=SL_LICENSING_STATUS_LICENSED;PartialProductKey=T83GX;ProductKeyType=Volume:GVLK;SkuId=2de67392-b7a7-462a-b1ca-108dd189f588;ruleId=502ff3ba-669a-4674-bbb1-601f34a3b968;uxDifferentiator=ENVIRONMENT;volumeActivationOrder=normal"
-"Information","11/26/2024 1:38:41 PM","Microsoft-Windows-Security-SPP","16388",,"The current time is 2024-11-26T05:38:41Z : 2024-11-26T05:38:41Z."
-"Information","11/26/2024 1:37:42 PM","Microsoft-Windows-Security-SPP","8230",,"The rules engine successfully re-evaluated the schedule.
-Kernel policies:
-Security-SPP-Action-StateData (REG_SZ) =AppId=55c92734-d682-4d71-983e-d6ec3f16059f;GraceEndDate=2025/05/18:05:38:42;LastConsumptionReason=0x00000000;LastNotificationId=Cleanup;LicenseState=SL_LICENSING_STATUS_LICENSED;PartialProductKey=T83GX;ProductKeyType=Volume:GVLK;SkuId=2de67392-b7a7-462a-b1ca-108dd189f588;ruleId=379cccfb-d4e0-48fe-b0f2-0136097be147;uxDifferentiator=ENVIRONMENT;volumeActivationOrder=normal"
-"Information","11/26/2024 1:37:42 PM","Microsoft-Windows-Security-SPP","16388",,"The current time is 2024-11-26T05:37:42Z : 2024-11-26T05:37:42Z."
-"Information","11/26/2024 1:36:07 PM","System Restore","8216",,"Skipping creation of restore point (Process = C:\Windows\system32\svchost.exe -k netsvcs -p -s wuauserv; Description = Windows Update) as there is a restore point avaliable which is recent enough for System Restore."
-"Information","11/26/2024 1:35:59 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
-"Information","11/26/2024 1:07:42 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2024-11-26T05:37:42Z. Reason: RulesEngine."
-"Information","11/26/2024 1:07:07 PM","Microsoft-Windows-Security-SPP","1003",,"The Software Protection service has completed licensing status check.
-Application Id=0ff1ce15-a989-479d-af46-f275c6370663
-Licensing Status=
-1: 85dd8b5f-eaa4-4af3-a628-cce9e77c9a03, 1, 1 [(0 [0x00000000, 1, 0], [(?)( 1 0x00000000)(?)( 2 0x00000000 0 0 msft:rm/algorithm/volume/1.0 0x00000000 250512)(?)(?)(?)(?)])(1 )(2 )(3 )]
-
-"
-"Information","11/26/2024 1:07:07 PM","Microsoft-Windows-Security-SPP","1003",,"The Software Protection service has completed licensing status check.
-Application Id=0ff1ce15-a989-479d-af46-f275c6370663
-Licensing Status=
-1: 85dd8b5f-eaa4-4af3-a628-cce9e77c9a03, 1, 1 [(0 [0x00000000, 1, 0], [(?)( 1 0x00000000)(?)( 2 0x00000000 0 0 msft:rm/algorithm/volume/1.0 0x00000000 250512)(?)(?)(?)(?)])(1 )(2 )(3 )]
-
-"
-"Information","11/26/2024 1:07:07 PM","Microsoft-Windows-Security-SPP","1003",,"The Software Protection service has completed licensing status check.
-Application Id=0ff1ce15-a989-479d-af46-f275c6370663
-Licensing Status=
-1: 0b4e6cfa-3072-434c-b702-bd1836e6887c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-2: 0bc88885-718c-491d-921f-6f214349e79c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-3: 6755c7a7-4dfe-46f5-bce8-427be8e9dc62, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-4: 85dd8b5f-eaa4-4af3-a628-cce9e77c9a03, 1, 1 [(0 [0x00000000, 1, 0], [(?)( 1 0x00000000)(?)( 2 0x00000000 0 0 msft:rm/algorithm/volume/1.0 0x00000000 250512)(?)(?)(?)(?)])(1 )(2 )(3 )]
-
-"
-"Information","11/26/2024 1:07:07 PM","Microsoft-Windows-Security-SPP","1003",,"The Software Protection service has completed licensing status check.
-Application Id=0ff1ce15-a989-479d-af46-f275c6370663
-Licensing Status=
-1: 0b4e6cfa-3072-434c-b702-bd1836e6887c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-2: 0bc88885-718c-491d-921f-6f214349e79c, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-3: 6755c7a7-4dfe-46f5-bce8-427be8e9dc62, 1, 0 [(0 [0xC004F014, 0, 0], [(?)(?)(?)(?)(?)(?)(?)(?)])(1 )(2 )(3 )]
-4: 85dd8b5f-eaa4-4af3-a628-cce9e77c9a03, 1, 1 [(0 [0x00000000, 1, 0], [(?)( 1 0x00000000)(?)( 2 0x00000000 0 0 msft:rm/algorithm/volume/1.0 0x00000000 250512)(?)(?)(?)(?)])(1 )(2 )(3 )]
-
-"
-"Information","11/26/2024 1:07:07 PM","Microsoft-Windows-Security-SPP","1040",,"Hardware has changed from previous boot.
- AppId=0ff1ce15-a989-479d-af46-f275c6370663, SkuId=85dd8b5f-eaa4-4af3-a628-cce9e77c9a03."
-"Information","11/26/2024 1:07:07 PM","Microsoft-Windows-Security-SPP","1040",,"Hardware has changed from previous boot.
- AppId=0ff1ce15-a989-479d-af46-f275c6370663, SkuId=85dd8b5f-eaa4-4af3-a628-cce9e77c9a03."
-"Information","11/26/2024 1:07:07 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
-"Information","11/26/2024 1:03:38 PM","Microsoft-Windows-Security-SPP","16384",,"Successfully scheduled Software Protection service for re-start at 2024-11-26T05:38:38Z. Reason: RulesEngine."
-"Information","11/26/2024 1:03:03 PM","Microsoft-Windows-Security-SPP","16394",,"Offline downlevel migration succeeded."
-"Warning","11/26/2024 1:02:48 PM","Chrome","256","Browser Events","[996:17636:1126/130248.478:WARNING:remote_commands_service.cc(221)] Client is not registered."
-"Warning","11/26/2024 1:02:43 PM","Chrome","256","Browser Events","[18836:19888:1126/130243.478:WARNING:remote_commands_service.cc(221)] Client is not registered."
