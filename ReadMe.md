@@ -2,12 +2,12 @@
 'ELA_root:' (Extract Logs Automation Root)
  - act as an APP ROOT FOLDER
  - configured gdrive storage in RCLONE 
- - located in emmanuel.jandog@flipside.ai > Developer Root > Extract Logs Automation
+ - located in work google account > Developer Root > Extract Logs Automation
 
 'UPScans:' (Upload Scans)
  - scans will be stored in this location. Can be change as long as configured in rclone.
  - configured gdrive storage in RCLONE
- - located in dev4flip@gmail.com > Log Scans > Upload Scans
+ - located in dev4 > Log Scans > Upload Scans
 
 'run.ps1'
  - this script will be called upon by the Task Scheduler
