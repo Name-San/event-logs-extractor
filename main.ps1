@@ -1,3 +1,7 @@
+$env:RCLONE_CONFIG = "C:\App\config\rclone.conf"
+$RCLONE_STORE = "UPScans"
+$SITE_FOLDER = "Cebu"
+
 # Function to calculate the last working day of the current month
 function Get-LastWorkingDay {
     $today = Get-Date
@@ -11,26 +15,30 @@ function Get-LastWorkingDay {
     }
 }
 
+# Download naming references in the drive
 function Get-Records {
     if (-not(Test-Path .\reference)) {
         New-Item -ItemType Directory -Path .\reference > $null
     }
 
-    rclone copy UPScans:_db_names .\reference
+    rclone copy ELA_Root:_db_names .\reference
 
-    if(-not(Test-Path .\reference\naming_ref.csv)) {
+    if (-not(Test-Path .\reference\naming_ref.csv)) {
         throw "Missing reference file in cloud."
     }
 
     return
 }
 
+# Upload generated logs in selected drive folder
 function Upload-Files {
     param($folder)
-    rclone copy ".\logs" UPScans:$folder
+    rclone copy ".\logs" "${RCLONE_STORE}:$SITE_FOLDER\${folder}"
+
     return
 }
 
+# Extract coresponded username in naming ref
 function Verify-FileNames {
     param([string]$user,[string]$ref,[int]$attempt)
     Write-output "$attempt"
@@ -69,10 +77,22 @@ function Verify-FileNames {
     }
 
     [PSCustomObject]@{
+        Device = $device
         Folder = $folder
         File   = $file
     }
    
+}
+
+# Compare two file using rclone md5sum to check if changes are present
+function Compare-Files {
+    param($a,$b)
+    $itemA = rclone md5sum $a
+    $itemB = rclone md5sum $b
+    if($itemA -ne $itemB) {
+        return $true
+    }
+    return $false
 }
 
 # Helper function to format the log data
@@ -88,15 +108,27 @@ function Format-LogEntry {
     }
 }
 
+# Return false to other computers.
+function Run-Only {
+    param($device, $users)
+    foreach ($user in $users) {
+        if ($device -eq $user) {
+            return $true
+        }
+    }
+    return $false
+    
+}
+
 # Determine if today is the last working day
 function Main {
-    $lastWorkingDay = 09
-    $today = 09
+    param($arg)
+    $lastWorkingDay = Get-LastWorkingDay
+    $today = Get-Date
 
-    if ($today -eq $lastWorkingDay) {
+    if (($today.Day -eq $lastWorkingDay.Day) -or ($arg -eq "--force-run")) {
         
         # Ensure the output directory exists
-        $env:RCLONE_CONFIG = ".\config\rclone.conf"
         $outputDir = ".\logs"
         $applicationDir = "$outputDir\Scan Logs"
         $securityDir = "$outputDir\Entry Logs"
@@ -104,8 +136,17 @@ function Main {
         $user = ".\config\user.prof"
 
         $result = Verify-FileNames -user $user -ref $ref -attempt 0
+        $device = $result.Device
         $file = $result.File
         $folder = $result.Folder
+
+        # Specify to run for certain user only, uncomment to use
+        # $users = @("PC72", "PC18", "PC35") # Add list of users
+        # $device_ok = Run-Only -device $device -users $users
+        # if (-not ($device_ok)) {
+        #     rm -recurse -force ".\reference"
+        #     return $false
+        # }
 
         if (-not (Test-Path $outputDir)) {
             New-Item -ItemType Directory -Path $applicationDir > $null
@@ -128,9 +169,13 @@ function Main {
         Export-Csv -Path "$securityDir\Failed Login Logs.csv" -NoTypeInformation
         
         # Upload logs to google drive using rclone
-        Upload-Files -folder $folder
+        $response = Upload-Files -folder $folder
+
+        # Clean
+        rm -recurse -force $outputDir, ".\reference"
 
         return "Success"
+
     } else {
         return $false
     }
@@ -138,4 +183,9 @@ function Main {
 
 #Check-Rclone
 cd C:\App
-Main
+
+# Additional code you can enter for update files aside main.ps1
+
+# Main program
+Main "--force-run"
+exit

@@ -2,7 +2,9 @@ $env:RCLONE_CONFIG = "C:\App\config\rclone.conf"
 $home_dir = "C:\App"
 $local_main = "C:\App\main.ps1"
 $backup_main = "C:\App\main.ps1_backup"
-$cloud_main = "UPScans:_src\main.ps1"
+$cloud_main = "ELA_Root:_src\main.ps1"
+$cloud_rclone = "ELA_Root:_config\rclone.conf" 
+$local_rclone = "C:\App\config\rclone.conf"
 
 # Check if rclone is installed
 function Check-Rclone {
@@ -15,6 +17,17 @@ function Check-Rclone {
         Remove-Item -force -recurse $folder_path, rclone.zip
         Write-Output "Installation completed"
     }
+}
+
+# Compare two file using rclone md5sum to check if changes are present
+function Compare-Files {
+    param($a,$b)
+    $itemA = rclone md5sum $a
+    $itemB = rclone md5sum $b
+    if($itemA -ne $itemB) {
+        return $true
+    }
+    return $false
 }
 
 # Generate logs for error
@@ -45,32 +58,41 @@ function Run-Main {
         return "Error: Max attempt in running main.ps1"
     }
 
-    $result = powershell -File C:\App\main.ps1
-
-    if ($result -ne "Success") {
+    $result = powershell -ExecutionPolicy Bypass -File C:\App\main.ps1
+    
+    if ($result -ne "Success" -and $result -ne "False") {
         cp -path $backup_main -destination $local_main -force
-
         $attempt++
-        $run = (Run-Main -attempt $attempt) + "`n$result"
+        $run = (Run-Main -attempt $attempt) + "`n($attempt): $result"
         return $run 
-    }   
+    }
 
     return "Success"
     
 }
 
-# Check for changes in cloud main file
-$remote = rclone md5sum $cloud_main
-$local = rclone md5sum $local_main
-if (-not ($remote -eq $local)) {
-    Copy-Item -Path $local_main -Destination "$home_dir\main.ps1_backup" -Force
-    rclone copy $cloud_main C:\App
-} else {
-    Write-Output "File is up-to-date!"
+# Update run.ps1 file using run.ps1_new
+if (Compare-Files -a "ELA_Root:_src\run.ps1" -b "C:\App\run.ps1") {
+    Copy-Item -Path "C:\App\run.ps1" -Destination "$home_dir\run.ps1_backup" -Force
+    rclone copy "ELA_Root:_src\run.ps1" "C:\App"
 }
 
+# Check for changes in cloud main file
+Check-Rclone
+if (Compare-Files -a $cloud_main -b $local_main) {
+    Copy-Item -Path $local_main -Destination "$home_dir\main.ps1_backup" -Force
+    rclone copy $cloud_main C:\App
+}
+
+# check for changes in rclone config
+if (Compare-Files -a $cloud_rclone -b $local_rclone) {
+    rclone copy $cloud_rclone C:\App\config
+}
+
+# Call Run-Main while waiting for the result to generate report
 $report = Run-Main -attempt 0
 if(-not($report -eq "Success")) {
     Generate-Log -entry $report
 }
+
 exit

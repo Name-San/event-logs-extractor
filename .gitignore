@@ -1,3 +1,4 @@
 logs
 reference
-main.ps1_backups
+html
+config/rclone.conf
