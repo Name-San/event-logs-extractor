@@ -32,5 +32,5 @@ ADVANCED USAGE
 
 
 Commands:
-powershell -windowstyle hidden -ExecutionPolicy Bypass -File "C:\App\_installer.ps1"
+powershell -windowstyle hidden -ExecutionPolicy Bypass -File "C:\App\\_installer.ps1"
 - executed when running .exe file
