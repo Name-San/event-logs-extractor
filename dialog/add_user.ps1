@@ -24,8 +24,11 @@ $AddButton.Add_Click({
         echo "device: $deviceID" > C:\App\config\user.prof
         [System.Windows.MessageBox]::Show("Device registration complete.")
     }
-    exit 0
+
+exit 0
+
 })
 
 # Show the window
 $window.ShowDialog()
+

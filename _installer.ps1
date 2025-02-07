@@ -1,7 +1,7 @@
-schtasks /create /tn "GetLogs" /xml C:\App\config\task.xml /f
+$home_dir = "C:\App"
+schtasks /create /tn "GetLogs" /xml $home_dir\config\task.xml /f
+& $home_dir\dialog\add_user.ps1
+& "$home_dir\own.ps1"
+rm -force -recurse "$home_dir\config\task.xml", "$home_dir\dialog", $home_dir\_installer.ps1
 
-& C:\App\dialog\add_user.ps1
-
-icacls C:\App /inheritance:r /grant Admin:F /grant Administrator:F /grant System:F /T /Q
-
-rm -force -recurse "C:\App\config\task.xml", "C:\App\dialog", C:\App\_installer.ps1
+exit 0

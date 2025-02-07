@@ -1,4 +1,5 @@
-$env:RCLONE_CONFIG = "C:\App\config\rclone.conf"
+$home_dir = "C:\App"
+$env:RCLONE_CONFIG = "$home_dir\config\rclone.conf"
 $RCLONE_STORE = "UPScans"
 $SITE_FOLDER = "Cebu"
 
@@ -182,10 +183,10 @@ function Main {
 }
 
 #Check-Rclone
-cd C:\App
+cd $home_dir
 
 # Additional code you can enter for update files aside main.ps1
 
 # Main program
-Main "--force-run"
+Main # "--force-run"
 exit
