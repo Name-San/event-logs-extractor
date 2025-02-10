@@ -1,7 +1,6 @@
 $home_dir = "C:\App"
 $env:RCLONE_CONFIG = "$home_dir\config\rclone.conf"
 $RCLONE_STORE = "UPScans"
-$SITE_FOLDER = "Cebu"
 
 # Function to calculate the last working day of the current month
 function Get-LastWorkingDay {
@@ -33,8 +32,13 @@ function Get-Records {
 
 # Upload generated logs in selected drive folder
 function Upload-Files {
-    param($folder)
-    rclone copy ".\logs" "${RCLONE_STORE}:$SITE_FOLDER\${folder}"
+    param([string]$folder, [string]$user)
+    Get-Content -Path  $user | ForEach-Object {
+        if ($_ -match "site:\s*(.+)") {
+            $site = $matches[1].Trim()
+        }
+    }
+    rclone copy ".\logs" "${RCLONE_STORE}:$site\${folder}"
 
     return
 }
@@ -170,7 +174,7 @@ function Main {
         Export-Csv -Path "$securityDir\Failed Login Logs.csv" -NoTypeInformation
         
         # Upload logs to google drive using rclone
-        $response = Upload-Files -folder $folder
+        $response = Upload-Files -folder $folder -user $user
 
         # Clean
         rm -recurse -force $outputDir, ".\reference"

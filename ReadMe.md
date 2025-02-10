@@ -21,6 +21,13 @@
  - extract Scan and Entry logs in csv format
  - upload scans to UPScans
 
+'own.ps1'
+ - the primary function of this script is to give necessary permissions everytime run.ps1 update files.
+ - When executed for the first time, it identifies the current user and give access to all files in the app.
+ - Then, it will store the current user name in the user.prof for future usage.
+ - When there is no own.ps1 file, everytime run.ps1 executed through Task Schedule the privilege will be given to the 'system'.
+ - Thus it modify files during update and there will be no access given to the previous users.
+
 ADVANCED USAGE
 'How to update run.ps1'
  - Since run.ps1 will be called at task scheduler this should be carefully update or script will be unuseable
