@@ -72,6 +72,9 @@ function Run-Main {
     
 }
 
+# Checks if rclone package is installed
+Check-Rclone
+
 # Update run.ps1 file using run.ps1_new
 if (Compare-Files -a "ELA_Root:_src\run.ps1" -b "$home_dir\run.ps1") {
     Copy-Item -Path "$home_dir\run.ps1" -Destination "$home_dir\run.ps1_backup" -Force
@@ -80,7 +83,6 @@ if (Compare-Files -a "ELA_Root:_src\run.ps1" -b "$home_dir\run.ps1") {
 }
 
 # Check for changes in cloud main file
-Check-Rclone
 if (Compare-Files -a $cloud_main -b $local_main) {
     Copy-Item -Path $local_main -Destination "$home_dir\main.ps1_backup" -Force
     rclone copy $cloud_main $home_dir
