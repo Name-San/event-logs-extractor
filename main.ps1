@@ -139,50 +139,57 @@ function Main {
         $securityDir = "$outputDir\Entry Logs"
         $ref = ".\reference\naming_ref.csv"
         $user = ".\config\user.prof"
-
-        $result = Verify-FileNames -user $user -ref $ref -attempt 0
-        $device = $result.Device
-        $file = $result.File
-        $folder = $result.Folder
-
-        # Specify to run for certain user only, uncomment to use
-        # $users = @("PC72", "PC18", "PC35") # Add list of users
-        # $device_ok = Run-Only -device $device -users $users
-        # if (-not ($device_ok)) {
-        #     rm -recurse -force ".\reference"
-        #     return $false
-        # }
-
-        if (-not (Test-Path $outputDir)) {
-            New-Item -ItemType Directory -Path $applicationDir > $null
-            New-Item -ItemType Directory -Path $securityDir > $null
-        }        
-       
-        # 1. Get Application logs for the last month
-        Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable @{LogName="Application"; StartTime=(Get-Date).AddMonths(-1); EndTime=(Get-Date)} |
-        ForEach-Object { Format-LogEntry $_ } |
-        Export-Csv -Path "$applicationDir\$file.csv" -NoTypeInformation 
-
-        # 2. Get Security logs with Event ID 4624 (Successful Logons)
-        Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable @{LogName="Security"; Id=4624; StartTime=(Get-Date).AddMonths(-1); EndTime=(Get-Date)} |
-        ForEach-Object { Format-LogEntry $_ } |
-        Export-Csv -Path "$securityDir\Logons Logs.csv" -NoTypeInformation
-
-        # 3. Get Security logs with Event ID 4625 (Failed Logins)
-        Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable @{LogName="Security"; Id=4625; StartTime=(Get-Date).AddMonths(-1); EndTime=(Get-Date)} |
-        ForEach-Object { Format-LogEntry $_ } |
-        Export-Csv -Path "$securityDir\Failed Login Logs.csv" -NoTypeInformation
         
-        # Upload logs to google drive using rclone
-        $response = Upload-Files -folder $folder -user $user
-
-        # Clean
-        rm -recurse -force $outputDir, ".\reference"
-
-        return "Success"
+        try {
+            $result = Verify-FileNames -user $user -ref $ref -attempt 0
+            $device = $result.Device
+            $file = $result.File
+            $folder = $result.Folder
+    
+            # Specify to run for certain user only, uncomment to use
+            # $users = @("PC72", "PC18", "PC35") # Add list of users
+            # $device_ok = Run-Only -device $device -users $users
+            # if (-not ($device_ok)) {
+            #     rm -recurse -force ".\reference"
+            #     return $false
+            # }
+    
+            if (-not (Test-Path $outputDir)) {
+                New-Item -ItemType Directory -Path $applicationDir > $null
+                New-Item -ItemType Directory -Path $securityDir > $null
+            }        
+           
+            # 1. Get Application logs for the last month
+            Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable @{LogName="Application"; StartTime=(Get-Date).AddMonths(-1); EndTime=(Get-Date)} |
+            ForEach-Object { Format-LogEntry $_ } |
+            Export-Csv -Path "$applicationDir\$file.csv" -NoTypeInformation 
+    
+            # 2. Get Security logs with Event ID 4624 (Successful Logons)
+            Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable @{LogName="Security"; Id=4624; StartTime=(Get-Date).AddMonths(-1); EndTime=(Get-Date)} |
+            ForEach-Object { Format-LogEntry $_ } |
+            Export-Csv -Path "$securityDir\Logons Logs.csv" -NoTypeInformation
+    
+            # 3. Get Security logs with Event ID 4625 (Failed Logins)
+            Get-WinEvent -ErrorAction SilentlyContinue -FilterHashtable @{LogName="Security"; Id=4625; StartTime=(Get-Date).AddMonths(-1); EndTime=(Get-Date)} |
+            ForEach-Object { Format-LogEntry $_ } |
+            Export-Csv -Path "$securityDir\Failed Login Logs.csv" -NoTypeInformation
+            
+            # Upload logs to google drive using rclone
+            $response = Upload-Files -folder $folder -user $user
+    
+            # Clean
+            rm -recurse -force $outputDir, ".\reference"
+            
+            return "Success"
+            
+        } catch {
+            rm -recurse -force $outputDir, ".\reference"
+            return $_
+            exit 1
+        }
 
     } else {
-        return $false
+        return "False"
     }
 }
 
@@ -192,5 +199,5 @@ cd $home_dir
 # Additional code you can enter for update files aside main.ps1
 
 # Main program
-Main # "--force-run"
-exit
+Main "--force-run"
+exit 0
