@@ -199,5 +199,5 @@ cd $home_dir
 # Additional code you can enter for update files aside main.ps1
 
 # Main program
-Main "--force-run"
+Main #"--force-run"
 exit 0
